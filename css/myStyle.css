@@ -1,0 +1,16 @@
+body
+{
+   background: peru;
+}
+
+#miParrafo
+{
+   width: 200px;
+   background: white;
+}
+
+.miParrafo
+{
+   width: 500px;
+   background: white;
+}

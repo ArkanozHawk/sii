@@ -1,0 +1,48 @@
+.nopadding
+{
+	padding: 0 !important;
+}
+
+.barra
+{
+	background: peru;
+	height: 65px;
+}
+
+.show
+{
+	background: silver;
+	height: 400px;
+}
+
+.specs
+{
+	background: green;
+	height: 300px;
+}
+
+.lateral
+{
+	height: 700px;
+	background: gray;
+}
+
+.contenido
+{
+	height: 700px;
+	background: brown;
+}
+
+.imagen
+{
+	background:#F2F3F4  ;
+	height:250px;
+	margin: 10px 25px 10px 10px;
+}
+
+.contenido1
+{
+	background:#EBF5FB;
+	height: 300px;
+	margin: 25px 25px 10px 10px;
+}
