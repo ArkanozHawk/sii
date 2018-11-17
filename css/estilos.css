@@ -46,3 +46,27 @@
 	height: 300px;
 	margin: 25px 25px 10px 10px;
 }
+
+#menu{
+height: 62px;
+
+background-color: #E6E6FA;
+padding: 15px;
+}
+
+#botones{
+margin: 0;
+padding-left: 21%;
+}
+
+
+
+
+#texto{
+
+	color: black;
+}
+
+a{
+	margin: 0;
+}
