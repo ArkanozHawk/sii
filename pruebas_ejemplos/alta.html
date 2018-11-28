@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agregar Productos</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+</head>
+<body>
+<center><h1>Agregar Productos.</h1></center>
+
+<section id="Formulario">
+	<div class="container">
+		<form action="productos.php" method="POST" enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="nombre">Nombre del Artículo:</label>
+				<input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ejemplo: Borrador Pelikan" required>
+			</div>
+			<div class="form-group">
+				<label for="descripcion">Descripción del Artículo:</label>
+				<textarea class="form-control" id="descripcion" name="descripcion" rows="3"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="cantidad">Cantidad:</label>
+				<input type="text" class="form-control" name="cantidad" id="cantidad" placeholder="Ej: 86">
+			</div>
+			<div class="form-group">
+				<label for="costo">Costo:</label>
+				<input type="text" class="form-control" name="costo" id="costo" placeholder="Ej: 400">
+			</div>
+			<div class="form-group">
+				<label for="imagen">Imagen del artículo:</label>
+				<input type="file" class="form-control-file" id="imagen" name="imagen">
+			</div>
+			<button type="submit" class="btn btn-primary">Registrar Producto</button>
+			<br><br>
+			<a href="index.html"><button type="button" class="btn btn-primary">Volver al Menú</button></a>
+			<br>
+		</form>
+	</div>
+</section>
+</body>
+</html>
