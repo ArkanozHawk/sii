@@ -4,11 +4,8 @@ include("conecta.php");
 
 $nickname = $_GET['nickname'];
 $pass = $_GET['pass'];
-
 $consulta = "SELECT * FROM usuarios WHERE nickname = '$nickname'";
-
 $result = mysqli_query($conexion, $consulta);
-
 if($result->num_rows > 0){
 }
   $row = $result->fetch_array(MYSQLI_ASSOC);

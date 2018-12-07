@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ALTA USUARIOS</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link href="../css/app.css" rel="stylesheet">
+</head>
+<body style="background-color:#E6E6FA">
+	<main class="py-4">
+		<section id="Formulario">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-8">
+						<div class="card">
+							<div class="card-header">Registrate</div>
+							<div class="card-body">
+								<form action="alta.php">
+			<div class="form-group">
+				<label for="nick">Nickname:</label>
+				<input type="text" class="form-control" name="nickname" id="nick" placeholder="Ejemplo: Usuario117_mexico" required>
+			</div>
+			<div class="form-group">
+				<label for="Contraseña">Contraseña:</label>
+				<input type="password" class="form-control" name="pass" id="Contraseña" placeholder="Preferiblemente arriba de 8 dígitos, combina símbolos" required>
+			</div>
+			<div class="form-group">
+				<label for="nombre">Nombre(s):</label>
+				<input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ejemplo: Juan Ignacio">
+			</div>
+			<div class="form-group">
+				<label for="Apellido_Paterno">Apellido Paterno:</label>
+				<input type="text" class="form-control" name="apellidoP" id="Apellido_Paterno" placeholder="Ejemplo: Castillo">
+			</div>
+			<div class="form-group">
+				<label for="Apellido_Materno">Apellido Materno:</label>
+				<input type="text" class="form-control" name="apellidoM" id="Apellido_Materno" placeholder="Ejemplo: Vázquez">
+			</div>
+			<button type="submit" class="btn btn-primary">Registrar Usuario</button>
+			<a href="../index.html"><button type="button" class="btn btn-primary">Volver al Menú</button></a>
+			<br>
+		</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+</body>
+</html>

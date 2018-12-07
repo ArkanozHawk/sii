@@ -1,0 +1,49 @@
+<?php
+include("../conecta.php");
+
+$consulta = "SELECT * FROM usuarios WHERE nickname = 'Arkanoz'";
+
+$res = mysqli_query($conexion, $consulta);
+$result = mysqli_fetch_array($res);
+$nickname = $result['nickname'];
+$nombre = $result['nombre'];
+$apellidoP = $result['apellidoP'];
+$apellidoM = $result['apellidoM'];
+$permisos = $result['permisos'];
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Usuario Consultado</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+</head>
+<body>
+	<center><h1>Usuario Consultado.</h1></center>
+	<section id="Tabla">
+		<div class="container">
+			<table border=1 align="center">
+				<tr>
+					<td><b>Código del Producto</b></td>
+					<td><b>Artículo</b></td>
+					<td><b>Descripción</b></td>
+					<td><b>Cantidad</b></td>
+					<td><b>Costo</b></td>
+				</tr>
+				<tr align="center">
+					<td><?php echo "$nickname"?></td>
+					<td><?php echo "$nombre"?></td>
+					<td><?php echo "$apellidoP"?></td>
+					<td><?php echo "$apellidoM"?></td>
+					<td><?php echo "$permisos"?></td>
+				</tr>
+			</table>
+			<a href=javascript:history.go(-1)><button type="button" class="btn btn-primary">regresar</button></a>
+			<br>
+			<?php echo exit; ?>
+		</div>
+	</section>
+</body>
+</html>

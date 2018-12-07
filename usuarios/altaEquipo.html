@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ALTA DE EQUIPOS</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link href="../css/app.css" rel="stylesheet">
+</head>
+<body style="background-color:#E6E6FA">
+	<main class="py-4">
+		<section id="Formulario">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-8">
+						<div class="card">
+							<div class="card-header">Registra tu equipo</div>
+							<div class="card-body">
+								<form action="altaEquipo.php">
+			<div class="form-group">
+				<label for="nombre">Nombre del Equipo:</label>
+				<input type="text" class="form-control" name="nombre" id="nombre" placeholder="Escribe el nombre del equipo" required>
+			</div>
+			<div class="form-group">
+				<label for="marca">Marca del Equipo:</label>
+				<input type="text" class="form-control" name="marca" id="marca" placeholder="Escribe la marca del equipo" required>
+			</div>
+			<div class="form-group">
+				<label for="tamaño">Tamaño:</label>
+				<input type="text" class="form-control" name="tamaño" id="tamaño" placeholder="Escribe el tamaño del equipo">
+			</div>
+			<div class="form-group">
+				<label for="resolucion">Resolucion:</label>
+				<input type="text" class="form-control" name="resolucion" id="resolucion" placeholder="Escribe la resolucion de la pantalla">
+			</div>
+			<div class="form-group">
+				<label for="cam_primaria">Camara Primaria:</label>
+				<input type="text" class="form-control" name="cam_primaria" id="cam_primaria" placeholder="Escribe los pixeles de la camara primaria">
+			</div>
+			<div class="form-group">
+				<label for="cam_secundaria">Camara Secundaria:</label>
+				<input type="text" class="form-control" name="cam_secundaria" id="cam_secundaria" placeholder="Escribe los pixeles de la camara secundaria" required>
+			</div>
+			<div class="form-group">
+				<label for="tam_bat">Bateria del Equipo:</label>
+				<input type="text" class="form-control" name="tam_bat" id="tam_bat" placeholder="Escribe el tamaño de la bateria" required>
+			</div>
+			<div class="form-group">
+				<label for="procesador">Procesador:</label>
+				<input type="text" class="form-control" name="procesador" id="procesador" placeholder="Escribe el procesador del equipo">
+			</div>
+			<div class="form-group">
+				<label for="memoria">Memoria del equipo:</label>
+				<input type="text" class="form-control" name="memoria" id="memoria" placeholder="Escribe el tamaño de la memoria">
+			</div>
+			<div class="form-group">
+				<label for="almacenamiento">Almacenamiento del equipo:</label>
+				<input type="text" class="form-control" name="almacenamiento" id="almacenamiento" placeholder="Escribe total de almacenamiento del equipo">
+			</div>
+			<div class="form-group">
+				<label for="imagen">Imagen:</label>
+				<input type="text" class="form-control" name="imagen" id="imagen" placeholder="cargar  imagen">
+			</div>
+
+
+
+			<button type="submit" class="btn btn-primary">Registrar Equipo</button>
+			<a href="../index.html"><button type="button" class="btn btn-primary">Volver al Menú</button></a>
+			<br>
+		</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+</body>
+</html>
