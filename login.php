@@ -14,6 +14,7 @@ if($resultado == $pass)
     {
       echo "usuario: $nickname<br>contraseña: $pass<br>";
        echo "El usuario $nickname se ha logueado correctamente<br>";
+       ECHO "<a href=usuarios/altaEquipo.html>Registrar Equipo</a><br>";
        ECHO "<a href=javascript:history.go(-1)>regresar</a><br>";
        exit;
     }

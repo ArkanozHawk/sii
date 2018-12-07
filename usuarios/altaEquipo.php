@@ -6,7 +6,7 @@ include("../conecta.php");
 
 $nombre = $_GET['nombre'];
 $marca = $_GET['marca'];
-$tamanio = $_GET['tamanio'];
+$tamaño = $_GET['tamaño'];
 $resolucion = $_GET['resolucion'];
 $cam_primaria = $_GET['cam_primaria'];
 $cam_secundaria = $_GET['cam_secundaria'];
@@ -16,7 +16,7 @@ $memoria = $_GET['memoria'];
 $almacenamiento = $_GET['almacenamiento'];
 $imagen = $_GET['imagen'];
 
-$inserta ="INSERT INTO equipos (nombre, marca, tamanio, resolucion, cam_primaria, cam_secundaria, tam_bat, procesador, memoria, almacenamiento, imagen) VALUES($nombre', '$marca', '$tamanio', '$resolucion', '$cam_primaria', '$cam_secundaria', '$tam_bat', '$procesador', '$memoria', '$almacenamiento', '$imagen')";
+$inserta ="INSERT INTO equipos (idEquipo, nombre, marca, tamaño, resolucion, cam_primaria, cam_secundaria, tam_bat, procesador, memoria, almacenamiento, imagen) VALUES('', '$nombre', '$marca', '$tamaño', '$resolucion', '$cam_primaria', '$cam_secundaria', '$tam_bat', '$procesador', '$memoria', '$almacenamiento', '$imagen')";
 
 $res = mysqli_query($conexion, $inserta);
 if($res)
