@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Consulta de productos</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+</head>
+<body>
+	<section id="Encabezado">
+    <div class="container">
+      <center><h1>CONSULTA DE PRODUCTOS.</h1></center>
+    </div>
+  </section>
+  <section id="formulario">
+    <div class="container">
+      <form action="consulta.php">
+        <div class="form-group">
+          <label for="idArticulo">Código del producto:</label>
+          <input type="text" class="form-control" id="idArticulo" name="idArticulo" aria-describedby="emailHelp" placeholder="Código del Producto" required>
+          <small id="nickhelp" class="form-text text-muted">El código del producto es numérico</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Consultar</button>
+        <br><br>
+			<a href="index.html"><button type="button" class="btn btn-primary">Volver al Menú</button></a>
+			<br>
+</body>
+</html>

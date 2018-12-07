@@ -13,7 +13,7 @@ if($result->num_rows > 0){
  
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $row['nickname'];
-    header ("Location: inicio.php");
+    header ("Location: index.html");
   } else { 
       echo'<div class="alert alert-danger">
                 <strong>Error!</strong> Usuario y/o password incorrectos.
